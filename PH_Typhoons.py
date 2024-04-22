@@ -16,7 +16,7 @@ if "model" not in st.session_state:
 def app():
     st.subheader('RNN-LSTM Based Typhoon Prediction in the Philippines')
     
-    text = """Prof. Louie F. Cervantes, M. Eng. (Information Engineering)
+    text = """Cherry Mirra Calisnao   BSCS 3A
     \nCCS 229 - Intelligent Systems
     *Department of Computer Science
     *College of Information and Communications Technology
@@ -35,7 +35,7 @@ def app():
     https://en.wikipedia.org/wiki/List_of_typhoons_in_the_Philippines_(2000%E2%80%93present)"""
     st.write(text)  
 
-    df = pd.read_csv('./ph-typhoons.csv', header=0)
+    df = pd.read_csv('./ph-typhoons_updated.csv', header=0)
 
     with st.expander('View Dataset'):
         # Load the data
